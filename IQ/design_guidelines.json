@@ -1,0 +1,132 @@
+{
+  "app_type": "mobile_web_app",
+  "global_theme": {
+    "theme": "Light",
+    "archetype": "Organic & Earthy",
+    "description": "Warm, trustworthy merchant dashboard matching the exact orange/brown reference theme. Uses white cards on a light warm background, with a prominent dark card for recent payouts."
+  },
+  "colors": {
+    "primary": "#C2410C",
+    "primary_hover": "#9A3412",
+    "background": "#FFF7ED",
+    "card_bg": "#FFFFFF",
+    "dark_card_bg": "#292524",
+    "text_main": "#1C1917",
+    "text_muted": "#78716C",
+    "success": "#16A34A",
+    "warning": "#D97706",
+    "danger": "#DC2626",
+    "border": "#E7E5E4"
+  },
+  "typography": {
+    "font_family_headings": "Manrope, sans-serif",
+    "font_family_body": "Work Sans, sans-serif",
+    "h1": "text-2xl font-black tracking-tight text-stone-900",
+    "h2": "text-xl font-bold tracking-tight text-stone-900",
+    "h3": "text-lg font-bold text-stone-900",
+    "body": "text-sm text-stone-700 leading-relaxed",
+    "small_label": "text-xs font-semibold tracking-wide text-stone-500 uppercase",
+    "kpi_value": "text-2xl font-bold text-stone-900",
+    "payout_value": "text-3xl font-bold text-white"
+  },
+  "layout": {
+    "container": "w-full max-w-md mx-auto min-h-screen bg-orange-50 pb-20 relative shadow-xl overflow-hidden",
+    "padding_global": "p-4 sm:p-6",
+    "grid_kpi": "grid grid-cols-2 gap-3 sm:gap-4",
+    "flex_row_between": "flex flex-row items-center justify-between"
+  },
+  "components": {
+    "MerchantHeader": {
+      "container": "flex flex-row justify-between items-start mb-6 pt-4 px-4 sm:px-6",
+      "title": "text-xl font-bold text-stone-900",
+      "subtitle_pill": "text-[10px] font-mono text-stone-500 bg-orange-100/50 px-2 py-1 rounded-md mt-1 inline-block"
+    },
+    "KPICard": {
+      "container": "bg-white p-4 rounded-2xl shadow-sm border border-stone-100 flex flex-col justify-between h-24",
+      "label": "text-xs font-medium text-stone-500",
+      "value": "text-xl font-bold text-stone-900 mt-1"
+    },
+    "DarkPayoutCard": {
+      "container": "bg-stone-800 p-5 rounded-3xl shadow-lg mx-4 sm:mx-6 mt-2 mb-6 text-white relative overflow-hidden",
+      "label": "text-sm font-medium text-stone-300",
+      "value": "text-3xl font-bold text-white my-2",
+      "button_primary": "bg-orange-600 hover:bg-orange-700 text-white px-4 py-3 rounded-xl text-sm font-semibold transition-colors w-full text-center flex items-center justify-center gap-2",
+      "button_secondary": "bg-transparent border border-stone-600 hover:bg-stone-700 text-white px-4 py-3 rounded-xl text-sm font-semibold transition-colors w-full text-center mt-2"
+    },
+    "FilterTabs": {
+      "container": "flex flex-row gap-2 overflow-x-auto px-4 sm:px-6 pb-2 scrollbar-hide mb-4",
+      "active_tab": "bg-stone-900 text-white px-4 py-1.5 rounded-full text-sm font-medium whitespace-nowrap",
+      "inactive_tab": "bg-white text-stone-600 px-4 py-1.5 rounded-full text-sm font-medium border border-stone-200 whitespace-nowrap transition-colors"
+    },
+    "TransactionItem": {
+      "container": "bg-white p-4 rounded-2xl shadow-sm border border-stone-100 mb-3 mx-4 sm:mx-6 flex flex-row justify-between items-center",
+      "icon_wrapper": "w-10 h-10 rounded-full bg-orange-50 flex items-center justify-center text-orange-600 mr-3 flex-shrink-0",
+      "title": "text-sm font-bold text-stone-900",
+      "date": "text-xs text-stone-500",
+      "amount": "text-sm font-bold text-stone-900",
+      "status_success": "text-xs font-medium text-green-600",
+      "status_pending": "text-xs font-medium text-orange-600",
+      "status_refund": "text-xs font-medium text-red-600"
+    },
+    "BottomNav": {
+      "container": "fixed bottom-0 w-full max-w-md bg-white border-t border-stone-100 px-6 py-3 flex flex-row justify-between items-center z-40 pb-safe",
+      "item_active": "flex flex-col items-center text-orange-600 transition-colors",
+      "item_inactive": "flex flex-col items-center text-stone-400 hover:text-stone-600 transition-colors",
+      "label": "text-[10px] mt-1 font-medium"
+    },
+    "DUXIQChatModal": {
+      "overlay": "fixed inset-0 bg-stone-900/60 backdrop-blur-sm z-50 flex flex-col justify-end",
+      "container": "w-full max-w-md mx-auto bg-white rounded-t-3xl shadow-2xl pb-safe flex flex-col h-[85vh] overflow-hidden relative",
+      "header": "p-4 border-b border-stone-100 flex justify-between items-center bg-orange-50",
+      "message_area": "flex-1 overflow-y-auto p-4 flex flex-col gap-4",
+      "message_user": "bg-orange-100 text-stone-900 p-3 rounded-2xl rounded-tr-sm self-end max-w-[80%] text-sm shadow-sm",
+      "message_ai": "bg-stone-50 border border-stone-100 text-stone-900 p-3 rounded-2xl rounded-tl-sm self-start max-w-[80%] text-sm shadow-sm",
+      "proactive_chip": "bg-white border border-orange-200 text-orange-700 px-3 py-1.5 rounded-full text-xs font-medium whitespace-nowrap shadow-sm active:bg-orange-50 cursor-pointer",
+      "input_area": "p-4 border-t border-stone-100 flex gap-2 items-center bg-white",
+      "star_rating_container": "flex gap-1 justify-center my-2",
+      "star_icon": "w-6 h-6 text-stone-300 hover:text-orange-500 transition-colors cursor-pointer",
+      "star_icon_active": "w-6 h-6 text-orange-500 transition-colors cursor-pointer"
+    }
+  },
+  "motion": {
+    "hover": "transition-all duration-200 ease-in-out hover:-translate-y-0.5",
+    "modal_enter": "animate-in slide-in-from-bottom-full duration-300 ease-out",
+    "tab_switch": "transition-colors duration-200"
+  },
+  "media": {
+    "image_urls": []
+  },
+  "test_ids": {
+    "header_merchant_name": "header-merchant-name",
+    "kpi_sales": "kpi-sales-today",
+    "kpi_transactions": "kpi-total-transactions",
+    "kpi_pending": "kpi-pending-settlement",
+    "kpi_payout": "kpi-last-payout",
+    "payout_card": "payout-details-card",
+    "btn_view_history": "btn-view-payout-history",
+    "btn_ask_dux": "btn-ask-dux-iq",
+    "filter_tab": "filter-tab-{status}",
+    "transaction_item": "transaction-item-{id}",
+    "nav_dashboard": "nav-dashboard",
+    "nav_transactions": "nav-transactions",
+    "nav_settlements": "nav-settlements",
+    "nav_profile": "nav-profile",
+    "chat_modal": "dux-iq-chat-modal",
+    "chat_input": "dux-iq-chat-input",
+    "chat_send": "dux-iq-chat-send",
+    "ticket_create_btn": "btn-create-support-ticket",
+    "star_rating": "star-rating-{score}",
+    "proactive_suggestion": "chip-proactive-suggestion-{id}"
+  },
+  "instructions_to_main_agent": [
+    "Use pure standard React JS with Tailwind classes mapped exactly to this JSON. Ensure it's responsive but restricted to 'max-w-md mx-auto' to perfectly mimic the mobile app layout on standard web browsers.",
+    "Implement exact values for all mock data as specified in the problem statement (Barista Coffee, ₹2,450.00, etc.).",
+    "DO NOT use a full screen width layout; encapsulate the app inside 'max-w-md mx-auto'.",
+    "Implement the DUX IQ chat as a fixed bottom-sheet modal using standard React state, overlaying the UI.",
+    "Inside the chat modal, mock a conversation flow: user asks query -> AI suggests proactive chips -> AI asks 'Did this resolve your issue?' -> User clicks No -> Ticket created -> Star rating shown.",
+    "Apply all data-testids to the interactive elements exactly as specified in the test_ids object.",
+    "Include Lucide React or Phosphor React icons for the Bottom Navigation, Transaction items, and Chat interface.",
+    "The Dark Payout Card must use 'bg-stone-800' to accurately reflect the dark theme requirement from the reference image.",
+    "Do NOT use HTML <select> or <input type='date'>. If needed, use standard Shadcn UI components. Ensure no complex setup is required for the chat flow."
+  ]
+}
